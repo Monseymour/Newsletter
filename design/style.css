@@ -24,49 +24,60 @@ body{
     font-size: 16px;
     background-color: var(--Dark-Slate-Grey);
 }
-/* main{
-} */
-section{
+#telaNormal{
+    display: flex;
     width: 50rem;
     margin: auto;
     margin-top: 5%;
     margin-bottom: 5%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     background-color: var(--White);
     border-radius: 30px;
     padding: 1rem;
 }
-article{
+#telaNormal article{
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 1.5rem;
-    padding: 2.5rem;
+    padding: 2rem;
     font-family: Roboto4;
     color: var(--Charcoal-Grey);
 }
 .input{
     margin-top: 1rem;
 }
-div img{
-    width: 100%;
-}
 h1{
     font-family: Roboto7;
     font-size: 48px;
 }
-ul{
-    margin-left: 1.5rem;
+.lista {
+    display: grid;
+    grid-template-columns: 2;
+    grid-template-rows: 3;
+    align-items: center;
+    gap: 0.8rem;
+    margin-left: -0.5rem;
 }
-li{
-    list-style-image: url(../assets/images/icon-list.svg);
-    padding-left: 0.5rem;
-    vertical-align: center;
+.lista img{
+    grid-column: 1;
+    height: 1.5rem;
 }
-input{
+.lista span{
+    grid-column: 2;
+}
+#telaNormal input{
     width: 100%;
+    height: 3.5rem;
+    margin-top: 0.8rem;
+    padding-left: 1rem;
+    border: var(--Grey) solid 2px;
+    border-radius: 10px;
+}
+#telaNormal input:target{
+    background-color: var(--Dark-Slate-Grey);
+}
+#telaNormal input::placeholder{
+    color: var(--Grey);
 }
 button{
     border: none;
@@ -74,15 +85,29 @@ button{
     height: 3.5rem;
     background-color: var(--Dark-Slate-Grey);
     color: var(--White);
+    cursor: pointer;
+    user-select: none;
 }
-button a{
-    color: var(--White);
-}
-#telaNormal{
-    display: contents;
+button:hover{
+    background-color: var(--Tomato);
+    box-shadow: 0 0.8rem 1.2rem 0rem hsla(4, 100%, 67%, 0.7);
 }
 #telaSucesso{
     display: none;
+    flex-direction: column;
+    background-color: var(--White);
+    width: 30rem;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 4rem;
+    border-radius: 30px;
+    gap: 1.5rem;
+    font-family: Roboto4;
+    color: var(--Charcoal-Grey);
+}
+#telaSucesso img{
+    width: 64px;
 }
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }

@@ -13,32 +13,34 @@
 
   <!-- Sign-up form start -->
   <main>
-    <section id="TelaNormal">
+    <section id="telaNormal">
       <article>
         <h1>Stay updated!</h1>
         <p>Join 60,000+ product managers receiving monthly updates on:</p>
-        <ul>
-          <li>Product discovery and building what matters</li>
-          <li>Measuring to ensure updates are a success</li>
-          <li>And much more!</li>
-        </ul>
-        <div class="input">
-          <label for="Email"><strong>Email address</strong></label>
-          <input type="text" id="Email" placeholder="email@company.com">
+        <div class="lista">
+          <img src="./assets/images/icon-list.svg" alt="ícone da lista"><span>Product discovery and building what matters</span>
+          <img src="./assets/images/icon-list.svg" alt="ícone da lista"><span>Measuring to ensure updates are a success</span>
+          <img src="./assets/images/icon-list.svg" alt="ícone da lista"><span>And much more!</span>
         </div>
-        <button type="submit"><strong>Subscribe to monthly newsletter</strong></button>
+        <div class="input">
+          <label for="confirmEmail"><strong>Email address</strong></label>
+          <input type="text" id="confirmEmail" placeholder="email@company.com">
+        </div>
+        <button onclick="confirmEmail()"><strong>Subscribe to monthly newsletter</strong></button>
       </article>
       <div><img src="./assets/images/illustration-sign-up-desktop.svg" alt="Imagem de Telas"></div>
     </section>
   <!-- Sign-up form end -->
   <!-- Success message start -->
   <section id="telaSucesso">
+    <img src="./assets/images/icon-success.svg" alt="">
     <h1>Thanks for subscribing!</h1>
-    <p>A confirmation email has been sent to <strong>ash@loremcompany.com</strong>. Please open it and click the button inside to confirm your subscription.</p>
-    <button><a href="#">Dismiss message</a></button>
+    <p>A confirmation email has been sent to <strong id="emailConfirmacao"></strong>. Please open it and click the button inside to confirm your subscription.</p>
+    <button onclick="trocarTela()">Dismiss message</button>
   </section>
     <!-- Success message end -->
   </main>
+  <script src="./index.js"></script>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
